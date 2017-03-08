@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		846DBAC81E6E490900005054 /* ObjcJieba.h in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAC61E6E490900005054 /* ObjcJieba.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		846DBB071E6E4A0D00005054 /* DictTrie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAE71E6E4A0D00005054 /* DictTrie.hpp */; };
+		846DBB081E6E4A0D00005054 /* FullSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAE81E6E4A0D00005054 /* FullSegment.hpp */; };
+		846DBB091E6E4A0D00005054 /* HMMModel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAE91E6E4A0D00005054 /* HMMModel.hpp */; };
+		846DBB0A1E6E4A0D00005054 /* HMMSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAEA1E6E4A0D00005054 /* HMMSegment.hpp */; };
+		846DBB0B1E6E4A0D00005054 /* Jieba.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAEB1E6E4A0D00005054 /* Jieba.hpp */; };
+		846DBB0C1E6E4A0D00005054 /* KeywordExtractor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAEC1E6E4A0D00005054 /* KeywordExtractor.hpp */; };
+		846DBB0D1E6E4A0D00005054 /* MixSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAED1E6E4A0D00005054 /* MixSegment.hpp */; };
+		846DBB0E1E6E4A0D00005054 /* MPSegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAEE1E6E4A0D00005054 /* MPSegment.hpp */; };
+		846DBB0F1E6E4A0D00005054 /* PosTagger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAEF1E6E4A0D00005054 /* PosTagger.hpp */; };
+		846DBB101E6E4A0D00005054 /* PreFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF01E6E4A0D00005054 /* PreFilter.hpp */; };
+		846DBB111E6E4A0D00005054 /* QuerySegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF11E6E4A0D00005054 /* QuerySegment.hpp */; };
+		846DBB121E6E4A0D00005054 /* SegmentBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF21E6E4A0D00005054 /* SegmentBase.hpp */; };
+		846DBB131E6E4A0D00005054 /* SegmentTagged.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF31E6E4A0D00005054 /* SegmentTagged.hpp */; };
+		846DBB141E6E4A0D00005054 /* TextRankExtractor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF41E6E4A0D00005054 /* TextRankExtractor.hpp */; };
+		846DBB151E6E4A0D00005054 /* Trie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF51E6E4A0D00005054 /* Trie.hpp */; };
+		846DBB161E6E4A0D00005054 /* Unicode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 846DBAF61E6E4A0D00005054 /* Unicode.hpp */; };
+		846DBB381E6E4EE800005054 /* ObjcJiebaKeywordExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 846DBB361E6E4EE800005054 /* ObjcJiebaKeywordExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		846DBB391E6E4EE800005054 /* ObjcJiebaKeywordExtractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 846DBB371E6E4EE800005054 /* ObjcJiebaKeywordExtractor.mm */; };
+		846DBB3D1E6E51B700005054 /* DictTrie.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAE71E6E4A0D00005054 /* DictTrie.hpp */; };
+		846DBB3E1E6E51B700005054 /* FullSegment.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAE81E6E4A0D00005054 /* FullSegment.hpp */; };
+		846DBB3F1E6E51B700005054 /* HMMModel.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAE91E6E4A0D00005054 /* HMMModel.hpp */; };
+		846DBB401E6E51B700005054 /* HMMSegment.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAEA1E6E4A0D00005054 /* HMMSegment.hpp */; };
+		846DBB411E6E51B700005054 /* Jieba.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAEB1E6E4A0D00005054 /* Jieba.hpp */; };
+		846DBB421E6E51B700005054 /* KeywordExtractor.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAEC1E6E4A0D00005054 /* KeywordExtractor.hpp */; };
+		846DBB431E6E51B700005054 /* MixSegment.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAED1E6E4A0D00005054 /* MixSegment.hpp */; };
+		846DBB441E6E51B700005054 /* MPSegment.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAEE1E6E4A0D00005054 /* MPSegment.hpp */; };
+		846DBB451E6E51B700005054 /* PosTagger.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAEF1E6E4A0D00005054 /* PosTagger.hpp */; };
+		846DBB461E6E51B700005054 /* PreFilter.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF01E6E4A0D00005054 /* PreFilter.hpp */; };
+		846DBB471E6E51B700005054 /* QuerySegment.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF11E6E4A0D00005054 /* QuerySegment.hpp */; };
+		846DBB481E6E51B700005054 /* SegmentBase.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF21E6E4A0D00005054 /* SegmentBase.hpp */; };
+		846DBB491E6E51B700005054 /* SegmentTagged.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF31E6E4A0D00005054 /* SegmentTagged.hpp */; };
+		846DBB4A1E6E51B700005054 /* TextRankExtractor.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF41E6E4A0D00005054 /* TextRankExtractor.hpp */; };
+		846DBB4B1E6E51B700005054 /* Trie.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF51E6E4A0D00005054 /* Trie.hpp */; };
+		846DBB4C1E6E51B700005054 /* Unicode.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 846DBAF61E6E4A0D00005054 /* Unicode.hpp */; };
+		84A6DA901E6F96EF00F75577 /* ObjcJieba.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84A6DA8F1E6F96EF00F75577 /* ObjcJieba.bundle */; };
+		84A6DA981E6F990500F75577 /* ObjcJiebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6DA971E6F990500F75577 /* ObjcJiebaTests.m */; };
+		84A6DA9A1E6F990500F75577 /* ObjcJieba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846DBAC31E6E490900005054 /* ObjcJieba.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A6DA9B1E6F990500F75577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846DBABA1E6E490900005054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 846DBAC21E6E490900005054;
+			remoteInfo = ObjcJieba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		846DBAC31E6E490900005054 /* ObjcJieba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcJieba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		846DBAC61E6E490900005054 /* ObjcJieba.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcJieba.h; sourceTree = "<group>"; };
+		846DBAC71E6E490900005054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846DBAE71E6E4A0D00005054 /* DictTrie.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = DictTrie.hpp; sourceTree = "<group>"; };
+		846DBAE81E6E4A0D00005054 /* FullSegment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = FullSegment.hpp; sourceTree = "<group>"; };
+		846DBAE91E6E4A0D00005054 /* HMMModel.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = HMMModel.hpp; sourceTree = "<group>"; };
+		846DBAEA1E6E4A0D00005054 /* HMMSegment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = HMMSegment.hpp; sourceTree = "<group>"; };
+		846DBAEB1E6E4A0D00005054 /* Jieba.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Jieba.hpp; sourceTree = "<group>"; };
+		846DBAEC1E6E4A0D00005054 /* KeywordExtractor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = KeywordExtractor.hpp; sourceTree = "<group>"; };
+		846DBAED1E6E4A0D00005054 /* MixSegment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = MixSegment.hpp; sourceTree = "<group>"; };
+		846DBAEE1E6E4A0D00005054 /* MPSegment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = MPSegment.hpp; sourceTree = "<group>"; };
+		846DBAEF1E6E4A0D00005054 /* PosTagger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = PosTagger.hpp; sourceTree = "<group>"; };
+		846DBAF01E6E4A0D00005054 /* PreFilter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = PreFilter.hpp; sourceTree = "<group>"; };
+		846DBAF11E6E4A0D00005054 /* QuerySegment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = QuerySegment.hpp; sourceTree = "<group>"; };
+		846DBAF21E6E4A0D00005054 /* SegmentBase.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = SegmentBase.hpp; sourceTree = "<group>"; };
+		846DBAF31E6E4A0D00005054 /* SegmentTagged.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = SegmentTagged.hpp; sourceTree = "<group>"; };
+		846DBAF41E6E4A0D00005054 /* TextRankExtractor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = TextRankExtractor.hpp; sourceTree = "<group>"; };
+		846DBAF51E6E4A0D00005054 /* Trie.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Trie.hpp; sourceTree = "<group>"; };
+		846DBAF61E6E4A0D00005054 /* Unicode.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Unicode.hpp; sourceTree = "<group>"; };
+		846DBB1F1E6E4A6F00005054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846DBB361E6E4EE800005054 /* ObjcJiebaKeywordExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcJiebaKeywordExtractor.h; sourceTree = "<group>"; };
+		846DBB371E6E4EE800005054 /* ObjcJiebaKeywordExtractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcJiebaKeywordExtractor.mm; sourceTree = "<group>"; };
+		846DBB4D1E6E523F00005054 /* limonp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = limonp; sourceTree = "<group>"; };
+		84A6DA8F1E6F96EF00F75577 /* ObjcJieba.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ObjcJieba.bundle; sourceTree = "<group>"; };
+		84A6DA951E6F990400F75577 /* ObjcJiebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcJiebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A6DA971E6F990500F75577 /* ObjcJiebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcJiebaTests.m; sourceTree = "<group>"; };
+		84A6DA991E6F990500F75577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846DBABF1E6E490900005054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6DA921E6F990400F75577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6DA9A1E6F990500F75577 /* ObjcJieba.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		846DBAB91E6E490900005054 = {
+			isa = PBXGroup;
+			children = (
+				846DBAC51E6E490900005054 /* ObjcJieba */,
+				846DBB1E1E6E4A6F00005054 /* JiebaDict */,
+				84A6DA961E6F990400F75577 /* ObjcJiebaTests */,
+				846DBAC41E6E490900005054 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		846DBAC41E6E490900005054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846DBAC31E6E490900005054 /* ObjcJieba.framework */,
+				84A6DA951E6F990400F75577 /* ObjcJiebaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846DBAC51E6E490900005054 /* ObjcJieba */ = {
+			isa = PBXGroup;
+			children = (
+				84A6DA8F1E6F96EF00F75577 /* ObjcJieba.bundle */,
+				846DBB4D1E6E523F00005054 /* limonp */,
+				846DBAD41E6E4A0D00005054 /* cppjieba */,
+				846DBAC61E6E490900005054 /* ObjcJieba.h */,
+				846DBAC71E6E490900005054 /* Info.plist */,
+				846DBB361E6E4EE800005054 /* ObjcJiebaKeywordExtractor.h */,
+				846DBB371E6E4EE800005054 /* ObjcJiebaKeywordExtractor.mm */,
+			);
+			path = ObjcJieba;
+			sourceTree = "<group>";
+		};
+		846DBAD41E6E4A0D00005054 /* cppjieba */ = {
+			isa = PBXGroup;
+			children = (
+				846DBAE51E6E4A0D00005054 /* include */,
+			);
+			path = cppjieba;
+			sourceTree = "<group>";
+		};
+		846DBAE51E6E4A0D00005054 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				846DBAE61E6E4A0D00005054 /* cppjieba */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		846DBAE61E6E4A0D00005054 /* cppjieba */ = {
+			isa = PBXGroup;
+			children = (
+				846DBAE71E6E4A0D00005054 /* DictTrie.hpp */,
+				846DBAE81E6E4A0D00005054 /* FullSegment.hpp */,
+				846DBAE91E6E4A0D00005054 /* HMMModel.hpp */,
+				846DBAEA1E6E4A0D00005054 /* HMMSegment.hpp */,
+				846DBAEB1E6E4A0D00005054 /* Jieba.hpp */,
+				846DBAEC1E6E4A0D00005054 /* KeywordExtractor.hpp */,
+				846DBAED1E6E4A0D00005054 /* MixSegment.hpp */,
+				846DBAEE1E6E4A0D00005054 /* MPSegment.hpp */,
+				846DBAEF1E6E4A0D00005054 /* PosTagger.hpp */,
+				846DBAF01E6E4A0D00005054 /* PreFilter.hpp */,
+				846DBAF11E6E4A0D00005054 /* QuerySegment.hpp */,
+				846DBAF21E6E4A0D00005054 /* SegmentBase.hpp */,
+				846DBAF31E6E4A0D00005054 /* SegmentTagged.hpp */,
+				846DBAF41E6E4A0D00005054 /* TextRankExtractor.hpp */,
+				846DBAF51E6E4A0D00005054 /* Trie.hpp */,
+				846DBAF61E6E4A0D00005054 /* Unicode.hpp */,
+			);
+			path = cppjieba;
+			sourceTree = "<group>";
+		};
+		846DBB1E1E6E4A6F00005054 /* JiebaDict */ = {
+			isa = PBXGroup;
+			children = (
+				846DBB1F1E6E4A6F00005054 /* Info.plist */,
+			);
+			path = JiebaDict;
+			sourceTree = "<group>";
+		};
+		84A6DA961E6F990400F75577 /* ObjcJiebaTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A6DA971E6F990500F75577 /* ObjcJiebaTests.m */,
+				84A6DA991E6F990500F75577 /* Info.plist */,
+			);
+			path = ObjcJiebaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		846DBAC01E6E490900005054 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846DBB161E6E4A0D00005054 /* Unicode.hpp in Headers */,
+				846DBB081E6E4A0D00005054 /* FullSegment.hpp in Headers */,
+				846DBB091E6E4A0D00005054 /* HMMModel.hpp in Headers */,
+				846DBB151E6E4A0D00005054 /* Trie.hpp in Headers */,
+				846DBB071E6E4A0D00005054 /* DictTrie.hpp in Headers */,
+				846DBB0C1E6E4A0D00005054 /* KeywordExtractor.hpp in Headers */,
+				846DBB0A1E6E4A0D00005054 /* HMMSegment.hpp in Headers */,
+				846DBB381E6E4EE800005054 /* ObjcJiebaKeywordExtractor.h in Headers */,
+				846DBB0D1E6E4A0D00005054 /* MixSegment.hpp in Headers */,
+				846DBB141E6E4A0D00005054 /* TextRankExtractor.hpp in Headers */,
+				846DBB101E6E4A0D00005054 /* PreFilter.hpp in Headers */,
+				846DBB121E6E4A0D00005054 /* SegmentBase.hpp in Headers */,
+				846DBB131E6E4A0D00005054 /* SegmentTagged.hpp in Headers */,
+				846DBB111E6E4A0D00005054 /* QuerySegment.hpp in Headers */,
+				846DBB0E1E6E4A0D00005054 /* MPSegment.hpp in Headers */,
+				846DBB0B1E6E4A0D00005054 /* Jieba.hpp in Headers */,
+				846DBAC81E6E490900005054 /* ObjcJieba.h in Headers */,
+				846DBB0F1E6E4A0D00005054 /* PosTagger.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		846DBAC21E6E490900005054 /* ObjcJieba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846DBACB1E6E490900005054 /* Build configuration list for PBXNativeTarget "ObjcJieba" */;
+			buildPhases = (
+				846DBABE1E6E490900005054 /* Sources */,
+				846DBABF1E6E490900005054 /* Frameworks */,
+				846DBAC01E6E490900005054 /* Headers */,
+				846DBAC11E6E490900005054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjcJieba;
+			productName = ObjcJieba;
+			productReference = 846DBAC31E6E490900005054 /* ObjcJieba.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84A6DA941E6F990400F75577 /* ObjcJiebaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A6DA9D1E6F990500F75577 /* Build configuration list for PBXNativeTarget "ObjcJiebaTests" */;
+			buildPhases = (
+				84A6DA911E6F990400F75577 /* Sources */,
+				84A6DA921E6F990400F75577 /* Frameworks */,
+				84A6DA931E6F990400F75577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A6DA9C1E6F990500F75577 /* PBXTargetDependency */,
+			);
+			name = ObjcJiebaTests;
+			productName = ObjcJiebaTests;
+			productReference = 84A6DA951E6F990400F75577 /* ObjcJiebaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846DBABA1E6E490900005054 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = none;
+				TargetAttributes = {
+					846DBAC21E6E490900005054 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					84A6DA941E6F990400F75577 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 846DBABD1E6E490900005054 /* Build configuration list for PBXProject "ObjcJieba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 846DBAB91E6E490900005054;
+			productRefGroup = 846DBAC41E6E490900005054 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846DBAC21E6E490900005054 /* ObjcJieba */,
+				84A6DA941E6F990400F75577 /* ObjcJiebaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846DBAC11E6E490900005054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6DA901E6F96EF00F75577 /* ObjcJieba.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6DA931E6F990400F75577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846DBABE1E6E490900005054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846DBB3D1E6E51B700005054 /* DictTrie.hpp in Sources */,
+				846DBB3E1E6E51B700005054 /* FullSegment.hpp in Sources */,
+				846DBB3F1E6E51B700005054 /* HMMModel.hpp in Sources */,
+				846DBB401E6E51B700005054 /* HMMSegment.hpp in Sources */,
+				846DBB411E6E51B700005054 /* Jieba.hpp in Sources */,
+				846DBB421E6E51B700005054 /* KeywordExtractor.hpp in Sources */,
+				846DBB431E6E51B700005054 /* MixSegment.hpp in Sources */,
+				846DBB441E6E51B700005054 /* MPSegment.hpp in Sources */,
+				846DBB451E6E51B700005054 /* PosTagger.hpp in Sources */,
+				846DBB461E6E51B700005054 /* PreFilter.hpp in Sources */,
+				846DBB471E6E51B700005054 /* QuerySegment.hpp in Sources */,
+				846DBB481E6E51B700005054 /* SegmentBase.hpp in Sources */,
+				846DBB491E6E51B700005054 /* SegmentTagged.hpp in Sources */,
+				846DBB4A1E6E51B700005054 /* TextRankExtractor.hpp in Sources */,
+				846DBB4B1E6E51B700005054 /* Trie.hpp in Sources */,
+				846DBB4C1E6E51B700005054 /* Unicode.hpp in Sources */,
+				846DBB391E6E4EE800005054 /* ObjcJiebaKeywordExtractor.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6DA911E6F990400F75577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6DA981E6F990500F75577 /* ObjcJiebaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A6DA9C1E6F990500F75577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 846DBAC21E6E490900005054 /* ObjcJieba */;
+			targetProxy = 84A6DA9B1E6F990500F75577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		846DBAC91E6E490900005054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		846DBACA1E6E490900005054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		846DBACC1E6E490900005054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ObjcJieba/";
+				INFOPLIST_FILE = ObjcJieba/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ObjcJieba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		846DBACD1E6E490900005054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ObjcJieba/";
+				INFOPLIST_FILE = ObjcJieba/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ObjcJieba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		84A6DA9E1E6F990500F75577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ObjcJiebaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ObjcJiebaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84A6DA9F1E6F990500F75577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ObjcJiebaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ObjcJiebaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846DBABD1E6E490900005054 /* Build configuration list for PBXProject "ObjcJieba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846DBAC91E6E490900005054 /* Debug */,
+				846DBACA1E6E490900005054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846DBACB1E6E490900005054 /* Build configuration list for PBXNativeTarget "ObjcJieba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846DBACC1E6E490900005054 /* Debug */,
+				846DBACD1E6E490900005054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A6DA9D1E6F990500F75577 /* Build configuration list for PBXNativeTarget "ObjcJiebaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A6DA9E1E6F990500F75577 /* Debug */,
+				84A6DA9F1E6F990500F75577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 846DBABA1E6E490900005054 /* Project object */;
+}
