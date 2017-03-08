@@ -1,2 +1,2 @@
 # ObjcJieba
-an objective-c wrapper for Jieba, forked from [CppJieba](https://github.com/yanyiwu/cppjieba)
+an objective-c wrapper for Jieba, forked from [cppjieba](https://github.com/yanyiwu/cppjieba)
